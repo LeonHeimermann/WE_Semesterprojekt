@@ -1,0 +1,49 @@
+body {
+    background-color: #292c33;
+	margin: 0;
+    width: 100vw;
+    height: 100vh;
+	margin-top: 0;
+	font-family: Roboto,sans-serif;
+	
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 10% 90%;
+	grid-template-areas:
+		"n_nav"
+		"d_main";
+}
+
+#n_nav {
+	grid-area: n_nav;
+	background-color: #41807c;
+}
+
+#n_nav ul {
+	float: left; 
+}
+
+#n_nav ul li {
+	float: left;
+	list-style: none;
+	position: relative;
+	top: 50%;
+	margin-left: 5vw;
+}
+
+#n_nav ul li a {
+	display: block;
+	font-family: Roboto,sans-serif;
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#n_nav ul li ul {
+	display: block;
+	position: absolute;
+}
+
+#d_main {
+	grid-area: d_main;
+}
