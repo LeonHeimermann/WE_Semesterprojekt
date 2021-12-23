@@ -1,0 +1,84 @@
+[
+			{"name": "Einführung", "sub": [  
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]}, 
+			{"name": "CSS 1", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]},
+			{"name": "CSS 2", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]},
+			{"name": "JavaScript", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]},
+			{"name": "DOM", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]},
+			{"name": "ECMAScript", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]},
+			{"name": "Functional", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]},
+			{"name": "Async", "sub": [
+								{"name": "xd"}, 
+								{"name": "toll"}
+								]},
+			{"name": "SVG", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]},
+			{"name": "TypeScript", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]},
+			{"name": "Vue", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]},
+			{"name": "PHP", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]},
+			{"name": "Security", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]},
+			{"name": "Vue3", "sub": [
+								{"name": "A1"}, 
+								{"name": "A2"},
+								{"name": "A3"}, 
+								{"name": "A4"}
+								]}
+]
