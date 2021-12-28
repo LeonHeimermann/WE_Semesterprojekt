@@ -1,0 +1,47 @@
+body {
+    background-color: #292c33;
+    width: 100vw;
+    height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: Roboto,sans-serif;
+	overflow-x: hidden;
+}
+
+#d_navigation {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#d_navigation div {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;	
+}
+
+#d_navigation div div {
+	width: 100%;
+	height: 10vh;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2rem;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.d_nav_main {
+	background-color: #41807c;
+	color:black;
+}
+
+.d_nav_sub {
+	background-color: #292c33;
+	color:white;
+}
+
+#d_navigation div div p {
+	margin-top: 3.5vh;
+}
