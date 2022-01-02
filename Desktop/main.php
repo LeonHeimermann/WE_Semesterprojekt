@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <script>
 	var json_data;
-	fetch("./data.json")
+	fetch("/data.json")
 	.then(response => {
 		json_data_tmp = response.json();
 		json_data_tmp.then(data => { 

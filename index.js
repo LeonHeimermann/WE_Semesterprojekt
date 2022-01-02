@@ -7,7 +7,7 @@ document.querySelector('button').addEventListener('click', e => {
 		body: new FormData(form)
 	}).then(function(res) {
 		if (res.ok) {
-			window.location.href = "main.php";
+			window.location.href = "/Desktop/main.php";
 		} else {
 			alert("Login failed try again");
 		}
