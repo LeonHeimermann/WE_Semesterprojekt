@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ü3</title>
+	<link rel="stylesheet" href="navigator.css">
+  </head>
+  <body>
+	<script src="https://unpkg.com/vue"></script>
+	<div id="vue-app-one">
+		<div id="div_navigator">
+			<h1 id="head_line">WWW-Navigator</h1>
+			<button id="b_html" v-on:click="switch_outer_state('html')">HTML</button>
+			<button id="b_css" v-on:click="switch_outer_state('css')">CSS</button>
+			<button id="b_js" v-on:click="switch_outer_state('js')">JavaScript</button>
+		</div>
+		<div id="div_left">
+			<button v-for="item in leftbuttons" v-on:click="change_text(item.txt)">{{ item.name }}</button>	
+		</div>
+		<div id="div_text">
+			{{ htmltext }}	
+		</div>
+		<div id="div_right">
+				
+		</div>
+		<div id="div_bottom">
+				
+		</div>
+	</div>
+  </body>
+  <script src="vue.js"></script>
+</html>

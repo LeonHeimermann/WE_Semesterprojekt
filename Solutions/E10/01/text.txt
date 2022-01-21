@@ -1,0 +1,3 @@
+<h1>Gibt es in TypeScript statische Klassen? Erläutern Sie den Unterschied von TypeScript zu anderen objekt-orientierten, statisch typisierten Programmiersprachen wie Java und C#.</h1>
+
+<p>Sprachen wie Java oder C# besitzen die nominale Typisierung. Das heißt, dass ein Objekt durch den Bezeichner seiner Klasse und nicht durch die Struktur der Klasse beschrieben wird. Ein Objekt der Klasse Person dürfte also nicht übergeben werden, wenn ein Objekt vom Typ Hund verlangt wird, auch wenn beide Klassen dieselben Attribute und dieselben Methoden besitzen und somit gleich sind. Bei TypeScript hingegen wird die strukturelle Typisierung verwendet, wodurch so etwas zulässig ist.</p> 

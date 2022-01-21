@@ -1,0 +1,34 @@
+<h1>Gegeben sei folgendes fehlerbehaftete JavaScript-Programm. Ergänzen Sie dieses um möglichst viele Typisierungen und übersetzen Sie es in ein TypeScript-Programm.</h1>
+<p>
+var age: number = 20; <br>
+const add = (x: number, y: number): number => x+y; <br>
+const equals = (x: any, y: any): boolean => x===y; <br>
+
+console.log(add(1, 2)); <br>
+console.log(add(true, true )); <br>
+console.log(add(true, false )); <br>
+var x: number = y: number = 1; <br>
+console.log(add(equals(x, y), equals(y, x)));
+</p>
+
+<h1>Was ist der Fehler in dem gegebenen JavaScript-Code?</h1>
+<p>
+- y kann so nicht erzeugt werden <br>
+- add nimmt nur Parameter vom Typ number und nicht vom Typ boolean
+</p>
+
+<h1>Welche Fehler meldet TypeScript?</h1>
+<p>
+Argument of type 'boolean' is not assignable to parameter of type 'number'. <br>
+Argument of type 'boolean' is not assignable to parameter of type 'number'. <br>
+Cannot find name 'y'. <br>
+Argument of type 'boolean' is not assignable to parameter of type 'number'. <br>
+Argument of type 'boolean' is not assignable to parameter of type 'number'. <br>
+Cannot find name 'y'.
+</p>
+
+<h1>Geben Sie weitere Beispiele an, wie TypeScript bei der Fehlersuche helfen kann:</h1>
+<p>
+Ich denke TypeScript ist gerade bei großen JavaScript-Anwendungen, bei denen der Überblick über alle Datentypen der Variablen verloren gehen kann sehr nützlich. TypeScript verhindert, dass Fehler erst zur Laufzeit auftreten die schon beim Kompilieren verhinderbar gewesen wären.
+</p>
+

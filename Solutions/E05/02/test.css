@@ -1,0 +1,23 @@
+#div_add {
+	width: 100vw;
+	height: 3vh;
+	display: grid;
+	grid-template-columns: 20%, 20%, 20%, 40%;
+	grid-template-rows: 100%;
+	background-color: green;
+}
+
+#div_add p {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#div_add input {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+#div_add button {
+	grid-column: 3;
+	grid-row: 1;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ü3</title>
+	<link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <div id="div_header">
+		<h1 id=outer_header>Survey Form</h1>
+	</div>
+	
+	<div id="div_main">
+		<div id="div_p1">
+		    <p id="p1">Let us know how we can improve freeCodeCamp</p>
+		</div>
+		
+		<div id="l1_1" class="left_data">
+			<p>* Name:</p>
+		</div>
+		<div id="r1_1" class="right_data">
+			<input class="i_form" id="i1" type="text" placeholder="Enter your Name"></input>
+		</div>
+		
+		<div id="l1_2" class="left_data">
+			<p>* Email:</p>
+		</div>
+		<div id="r1_2" class="right_data">
+			<input class="i_form" id="i2" type="text" placeholder="Enter your Email"></input>
+		</div>
+		
+		<div id="l1_3" class="left_data">
+			<p>* Age:</p>
+		</div>
+		<div id="r1_3" class="right_data">
+			<input class="i_form" id="i3" type="text" placeholder="Age"></input>
+		</div>
+		
+		<div id="l2" class="left_select">
+			<p>Which option best describes your current role?</p>
+		</div>
+		<div id="r2" class="right_select">
+			<select id="s1" type="text">
+				<option>Student</option>
+				<option>Prof</option>
+				<option>Worker</option>
+			</select>
+		</div>
+		
+		<div id="l3" class="left_cb">
+			<p>* How likely is that you would recommend free Code Camp to a friend?</p>
+		</div>
+		<div id="r3" class="right_cb">
+			<div class="div_rb">
+				<input id="rb1" type="radio" name="sel" value="Definitely">
+				<label for="r1">Definitely</label>
+				</br>
+				<input id="rb2" type="radio" name="sel" value="Maybe">
+				<label for="rb2">Maybe</label>
+				</br>
+				<input id="r3" type="radio" name="sel" value="Not sure">
+				<label for="r3">Not sure</label> 
+			</div>
+		</div>
+		
+		<div id="l4" class="left_select">
+			<p>What do you like most in FCC?</p>
+		</div>
+		<div id="r4" class="right_select">
+			<select id="s2" type="text">
+				<option>Select an option</option>
+				<option>Nothing</option>
+				<option>All</option>
+			</select>
+		</div>
+		
+		<div id="l5" class="left_cb">
+			<p>Things that should be improved in the future (Check all that apply):</p>
+		</div>
+		<div id="r5" class="right_cb">
+			<div class="div_rb">
+				<input type="checkbox" id="c1" name="improved" value="Front-end-Projects">
+				<label for="c1">Front-end Projects</label>
+				</br>
+				<input type="checkbox" id="c2" name="improved" value="Back-end-Projects">
+				<label for="c2">Back-end Projects</label>
+				</br>
+				<input type="checkbox" id="c3" name="improved" value="Visualization">
+				<label for="c3">Data Visualization</label>
+			</div>
+		</div>
+  </body>
+</html>

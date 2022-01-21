@@ -1,0 +1,37 @@
+<h1>Was ist HTML?</h1>
+<p>HTML (Hypertext Markup Language) ist eine textbasierte Sprache zur Beschreibung der Struktur eines Dokumentes.</p>
+
+
+<h1>Wie kann man eine geschachtelte geordnete Liste der Schachtelungstiefe 3 erzeugen?</h1>
+<p>
+	-ol--/ol- zum Erstellen einer geordneten Liste <br>
+	-li--/li- zum Erstellen eines Listenelements
+</p>
+
+
+<h1>Wie ist eine HTML-Tabelle aufgebaut?</h1>
+<p>
+	-table--/table- definiert eine Tabelle <br>
+	-tr--/tr- erstellt eine Zeile <br>
+	-td--/td- erzeugt eine Zelle in einer Zeile (th für Überschrifftszelle)
+</p>
+
+<h1>Welche Konventionen sollte man bei Pfaden und Dateinamen beachten?</h1>
+<p>
+	Es sollte alles in Kleinbuchstaben geschrieben werden, es sollten keine Leerzeichen verwendet werden und es sollten nur Buchstaben, Zahlen oder - und _ verwendet werden (Außer der Punkt vom Dateityp). <br>
+</p>
+
+<h1>Wie baut man in HTML ein Menü?</h1>
+<p>
+	-menu--/menu- zum Definieren eines Menüs <br>
+	-menuitem--/menuitem- zum Definieren eines Menüpunktes
+</p>
+
+<h1>Welche Attribute sollte man bei Bildern wie verwenden?</h1>
+<p>
+	-img src="test.png" alt="Alternativer Text"- <br>
+	scr gibt den Bildpfad an. <br>
+	alt gibt eine alternative Beschreibung des Bildes an, falls das Bild nicht abgebildet werden kann. <br>
+	height gibt die Höhe des Bildes an. <br>
+	width gibt die Breite des Bildes an.
+</p>

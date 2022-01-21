@@ -1,0 +1,38 @@
+<h1>Schreiben Sie eine Funktion identity(), die ein Argument als Parameter entgegen nimmt und dieses als Ergebnis zurück gibt.</h1>
+<p>
+	function identity(input) {
+		return input;
+	}
+</p>
+
+<h1>Schreiben Sie eine Funktion identity_function(), die ein Argument als Parameter entgegen nimmt und eine Funktion zurück gibt, die dieses Argument zurück gibt.</h1>
+<p>
+	function identity_function(input) {
+		return function(){return input};
+	}
+</p>
+
+<h1>Schreiben Sie zwei binäre Funktionen add und mul, die Summe und Produkt berechnen.</h1>
+<p>
+	function add(a, b) {
+		return a + b;
+	}
+
+	function mul(a, b) {
+		return a * b;
+	}
+</p>
+
+<h1>Schreiben Sie eine Addier-Funktion addf(), so dass addf(x)(y) genau x + y zurück gibt. <br>(Es haben also zwei Funktionsaufrufe zu erfolgen. addf(x) liefert eine Funktion, die auf y angewandt wird.)</h1>
+<p>
+	function addf(x) {
+		return function(y) {return x + y};
+	}
+</p>
+
+<h1>Schreiben Sie eine Funktion applyf(), die aus einer binären Funktion wie add(x,y) eine Funktion addfberechnet, die mit zwei Aufrufen das gleiche Ergebnis liefert, z.B. addf = applyf(add); addf(x)(y) soll add(x,y) liefern. Entsprechend applyf(mul)(5)(6) soll 30 liefern, wenn mul die binäre Multiplikation ist.</h1>
+<p>
+	function applyf(f) {
+		return function(y) {return function(x) {return f(x, y)}};
+	}
+</p>

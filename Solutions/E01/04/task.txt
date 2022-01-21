@@ -1,0 +1,5 @@
+<h2>Gegeben ist folgendes HTML-Wireframe: <br>
+
+Mit welchem HTML-Code (ohne CSS, nur mit HTML-Tags) kann man diesen Wireframe exakt nachbilden?
+Die beiden Bilder finden Sie z.B. unter TBL und Eich.
+Geben Sie Ihren HTML-Quellcode in dieses Textfeld ein:</h2>

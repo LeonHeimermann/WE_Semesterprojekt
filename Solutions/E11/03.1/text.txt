@@ -1,0 +1,4 @@
+<h1>Dokumentieren Sie Ihren Entscheidungsprozess: In welche Komponenten wollen Sie Ihre App zerlegen? Wie soll das State Management implementiert werden?</h1>
+<p>
+Ich habe mich an der originalen Version orientiert. Der Navigator enthält die Buttons "HTML", "CSS", und "JavaScript". Diese  ändern den State durch einen Klick. Beim klicken wird eine Methode aufgerufen, die die Button-Namen aus einer JSON-Datei lädt. Diese Button-Namen werden dann in der Liste "leftbuttons" gespeichert. In "div_left" werden so viele Buttons erzeugt, wie in der Liste enthalten sind. Durch einen Klick auf diese neu erzeugten Buttons wird dann der vorher geladene Text in "div_text" über die Methode "change_text" eingefügt.
+</p>

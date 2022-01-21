@@ -1,0 +1,161 @@
+<h1>Schreiben Sie eine Funktion identity_function(), die ein Argument als Parameter entgegennimmt und eine Funktion zurückgibt, die dieses Argument zurückgibt.</h1>
+<p>
+function identity_function(input) {
+	return function() {
+		return input;
+	};
+}
+</p>
+
+<h1>Schreiben Sie eine Addier-Funktion addf(), so dass addf(x)(y) genau x + y zurück gibt. (Es haben also zwei Funktionsaufrufe zu erfolgen. addf(x) liefert eine Funktion, die auf y angewandt wird.)</h1>
+<p>
+function addf(x) {
+	return function(y) {return x + y};
+}
+</p>
+
+<h1>Schreiben Sie eine Funktion applyf(), die aus einer binären Funktion wie add(x,y) eine Funktion addfberechnet, die mit zwei Aufrufen das gleiche Ergebnis liefert, z.B. addf = applyf(add); addf(x)(y) soll add(x,y) liefern. Entsprechend applyf(mul)(5)(6) soll 30 liefern, wenn mul die binäre Multiplikation ist.</h1>
+<p>
+function applyf(f) {
+	return function(y) {return function(x) {return f(x, y)}};
+}
+</p>
+
+<h1>Schreiben Sie eine Funktion curry() (von Currying), die eine binäre Funktion und ein Argument nimmt, um daraus eine Funktion zu erzeugen, die ein zweites Argument entgegen nimmt, z.B. add3 = curry(add, 3);add3(4) ergibt 7. curry(mul, 5)(6) ergibt 30.</h1>
+<p>
+function curry(func, a) {
+	return function(b) {
+		return func(a, b);
+	};
+}
+</p>
+
+<h1>Erzeugen Sie die inc-Funktion mit Hilfe einer der Funktionen addf, applyf und curry aus den letzten Aufgaben, ohne die Funktion inc() selbst zu implementieren. (inc(x) soll immer x + 1 ergeben und lässt sich natürlich auch direkt implementieren. Das ist aber hier nicht die Aufgabe.) Vielleicht schaffen Sie es auch, drei Varianten der inc()-Implementierung zu schreiben?</h1>
+<p>
+inc = addf(1);
+
+inc(5) würde also 6 ergeben
+</p>
+
+<h1>Schreiben Sie eine Funktion methodize(), die eine binäre Funktion (z.B. add, mul) in eine unäre Methode verwandelt. Nach Number.prototype.add = methodize(add); soll (3).add(4) genau 7 ergeben.</h1>
+<p>
+function methodize(func) {
+	return function(a, b) {
+		return a + b;
+	};
+}
+</p>
+
+<h1>Schreiben Sie eine Funktion demethodize(), die eine unäre Methode (z.B. add, mul) in eine binäre Funktion umwandelt. demethodize(Number.prototype.add)(5, 6) soll 11 ergeben.</h1>
+<p>
+function demethodize(func) {
+	return function(a, b) {
+		return a + b;
+	};
+}
+</p>
+
+<h1>Schreiben Sie eine Funktion twice(), die eine binäre Funktion in eine unäre Funktion umwandelt, die den einen Parameter zweimal weiter reicht. Z.B. var double = twice(add); double(11) soll 22 ergeben; var square = twice(mul); square(11) soll mul(11,11) === 121 ergeben.</h1>
+<p>
+function twice(func) {
+	return function(a) {
+		return func(a, a);
+	};
+}
+</p>
+
+<h1>Schreiben Sie eine Funktion composeu(), die zwei unäre Funktionen in eine einzelne unäre Funktion transformiert, die beide nacheinander aufruft, z.B. soll composeu(double, square)(3) genau 36 ergeben.</h1>
+<p>
+function composeu(func1, func2) {
+	return function(a) {
+		return func2(func1(a));
+	};
+}
+</p>
+
+<h1>Schreiben Sie eine Funktion composeb(), die zwei binäre Funktionen in eine einzelne Funktion transformiert, die beide nacheinander aufruft, z.B. composeb(add, mul)(2, 3, 5) soll 25 ergeben.</h1>
+<p>
+function composeb(func1, func2) {
+	return function(a, b, c) {
+		return func2(func1(a, b), c);
+	};
+}
+</p>
+
+<h1>Schreiben Sie eine Funktion once(), die einer anderen Funktion nur einmal erlaubt, aufgerufen zu werden, z.B. add_once = once(add); add_once(3, 4) soll beim ersten Mal 7 ergeben, beim zweiten Mal soll jedoch add_once(3, 4) einen Fehlerabbruch bewirken.</h1>
+<p>
+function once(func) {
+	called = false;
+	return function(a, b) {
+		if called {
+			throw new function(message) {
+				this.message = message;
+			}
+		}else {
+			called = true;
+			return func(a, b);
+		}
+	};
+}
+</p>
+
+<h1>Schreiben Sie eine Fabrik-Funktion counterf(), die zwei Funktionen inc() und dec() berechnet, die einen Zähler hoch- und herunterzählen. Z.B. counter = counterf(10); Dann soll counter.inc() 11 und counter.dec() wieder 10 ergeben.</h1>
+<p>
+function counterf(a) {
+	return new class {
+		constructor() {
+			this.value = a;
+		}
+		inc() {
+			this.value++;
+		};
+		dec() {
+			this.value--;
+		};
+	};
+}
+</p>
+
+<h1>Schreiben Sie eine rücknehmbare Funktion revocable(), die als Parameter eine Funktion nimmt und diese bei Aufruf ausführt. Sobald die Funktion aber mit revoke() zurück genommen wurde, führt ein erneuter Aufruf zu einem Fehler.</h1>
+<p>
+function revocate(func) {
+	return new class {
+		constructor() {
+			this.func = func;
+			this.revoked = false;
+		}
+		invoke(a) {
+			if (revoked) {
+				throw new function(message) {
+					this.message = message;
+				};
+			}else {
+				this.func(a);
+			}
+		}
+		revoke() {
+			revoked = true;
+		}
+	}
+}
+</p>
+
+<h1>Implementieren Sie ein "Array Wrapper"-Objekt mit den Methoden get, store und append, so dass ein Angreifer keinen Zugriff auf das innere, private Array hat.</h1>
+<p>
+function vector() {
+	return new class {
+		constructor {
+			this.list = [];
+		}
+		append(a) {
+			this.list.push(a); <br>
+		}
+		store(index, a) { 
+			this.list.splice(index, 0, a); <br>
+		}
+		get(index) {
+			return this.list[index];
+		}
+	}
+}
+</p>

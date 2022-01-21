@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ü2</title>
+  </head>
+  <style>
+	body {
+		font-family: arial;
+	}
+	svg:hover {
+		width: 50vw;
+		height: 56vh;
+	}
+  </style>
+  <body>
+	<div style="text-align:center">
+		<svg id="svg_corona" width="100vw" height="100vh">
+		
+		</svg>
+	</div>
+  </body>
+  <script>  
+	var svg_corona = document.getElementById('svg_corona');
+	
+	fetch("./data.json").then(response => {
+		var json_data_tmp = response.json();
+		json_data_tmp.then(data => { 
+			var json_data = data;
+			
+			var list = [];
+			for (var i in json_data["Fallzahlen"]) {
+				list.push(i);
+			}
+			
+			var length = list.length;
+			for (var i = 0; i < length; i++) {
+				const newRect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+				newRect.setAttribute("x", (i*(100/length)).toString() + "%");
+				newRect.setAttribute("y", (100-list[i]).toString() + "%");
+				newRect.setAttribute("width", ((i+1) * (100/length)).toString() + "%");
+				newRect.setAttribute("height", (list[i]).toString() + "%");
+				newRect.setAttribute("stroke", "black");
+				newRect.setAttribute("stroke-width", "0.2%");
+				newRect.setAttribute("fill", "white");
+		
+				svg_corona.append(newRect);
+			}
+		});
+	});
+  </script>
+</html>

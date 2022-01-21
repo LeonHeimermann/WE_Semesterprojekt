@@ -1,0 +1,7 @@
+<h2>
+Implementieren Sie folgende Landing Page responsiv mit Grid Layout. Vermeiden Sie außerdem das Erscheinen von Scrollbars so weit wie möglich. <br>
+
+Für das Bild dürfen Sie die URL ./assets/img/landing-img.png verwenden.<br>
+
+Geben Sie hier HTML- und CSS-Code zusammen ein:
+</h2>

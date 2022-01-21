@@ -1,0 +1,3 @@
+<h2>
+Implementieren Sie das Spiel Tic-Tac-Toe als HTML-Datei mit Inline SVG, CSS und JavaScript.
+</h2>

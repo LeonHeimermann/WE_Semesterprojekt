@@ -1,84 +1,65 @@
 [
 			{"name": "Einführung", "sub": [  
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
+								{"name": "A1", "type": "text", "path": "/Solutions/E01/01/text.txt"}, 
+								{"name": "A2", "type": "text", "path": "/Solutions/E01/02/text.txt"},
+								{"name": "A3", "type": "text", "path": "/Solutions/E01/03/text.txt"}, 
+								{"name": "A4", "type": "html", "path": "/Solutions/E01/04/index.html", "path_task": "/Solutions/E01/04/task.txt"}
 								]}, 
 			{"name": "CSS 1", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
+								{"name": "A1", "type": "text", "path": "/Solutions/E02/01/text.txt"}, 
+								{"name": "A2.1", "type": "html", "path": "/Solutions/E02/02.1/headline.html", "path_task": "/Solutions/E02/02.1/task.txt"},
+								{"name": "A2.2", "type": "html", "path": "/Solutions/E02/02.2/checkbox.html", "path_task": "/Solutions/E02/02.2/task.txt"}, 
+								{"name": "A3", "type": "html", "path": "/Solutions/E02/03/survey.html", "path_task": "/Solutions/E02/03/task.txt"}
 								]},
 			{"name": "CSS 2", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
+								{"name": "A1", "type": "html", "path": "/Solutions/E03/01/flex.html", "path_task": "/Solutions/E03/01/task.txt"}, 
+								{"name": "A2", "type": "html", "path": "/Solutions/E03/02/grid.html", "path_task": "/Solutions/E03/02/task.txt"},
+								{"name": "A3", "type": "html", "path": "/Solutions/E03/03/grid.html", "path_task": "/Solutions/E03/03/task.txt"}
 								]},
 			{"name": "JavaScript", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
+								{"name": "A1", "type": "text", "path": "/Solutions/E04/01/text.txt"}, 
+								{"name": "A2", "type": "html", "path": "/Solutions/E04/02/test.html", "path_task": "/Solutions/E04/02/task.txt"},
+								{"name": "A3", "type": "html", "path": "/Solutions/E04/03/test.html", "path_task": "/Solutions/E04/03/task.txt"}, 
+								{"name": "A4", "type": "html", "path": "/Solutions/E04/04/test.html", "path_task": "/Solutions/E04/04/task.txt"}
 								]},
 			{"name": "DOM", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
+								{"name": "A1", "type": "html", "path": "/Solutions/E05/01/test.html", "path_task": "/Solutions/E05/01/task.txt"}, 
+								{"name": "A2", "type": "html", "path": "/Solutions/E05/02/test.html", "path_task": "/Solutions/E05/02/task.txt"}
 								]},
 			{"name": "ECMAScript", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
+								{"name": "A1", "type": "html", "path": "/Solutions/E06/01/test.html", "path_task": "/Solutions/E06/01/task.txt"}, 
+								{"name": "A2", "type": "html", "path": "/Solutions/E06/02/test.html", "path_task": "/Solutions/E06/02/task.txt"},
+								{"name": "A3", "type": "html", "path": "/Solutions/E06/03/test.html", "path_task": "/Solutions/E06/03/task.txt"}, 
+								{"name": "A4", "type": "html", "path": "/Solutions/E06/04/test.html", "path_task": "/Solutions/E06/04/task.txt"},
+								{"name": "A5", "type": "html", "path": "/Solutions/E06/05/test.html", "path_task": "/Solutions/E06/05/task.txt"}
 								]},
 			{"name": "Functional", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
+								{"name": "A1", "type": "text", "path": "/Solutions/E07/01/text.txt"}, 
+								{"name": "A2", "type": "html", "path": "/Solutions/E07/02/test.html", "path_task": "/Solutions/E07/02/task.txt"}
 								]},
 			{"name": "Async", "sub": [
-								{"name": "xd"}, 
-								{"name": "toll"}
+								{"name": "A1", "type": "html", "path": "/Solutions/E08/01/test.html", "path_task": "/Solutions/E08/01/task.txt"}, 
+								{"name": "A2", "type": "html", "path": "/Solutions/E08/02/test.html", "path_task": "/Solutions/E08/02/task.txt"},
+								{"name": "A3", "type": "html", "path": "/Solutions/E08/03/navigator.html", "path_task": "/Solutions/E08/03/task.txt"}
 								]},
 			{"name": "SVG", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
+								{"name": "A1", "type": "html", "path": "/Solutions/E09/01/A1.html", "path_task": "/Solutions/E09/01/task.txt"}, 
+								{"name": "A2", "type": "html", "path": "/Solutions/E09/02/A2.html", "path_task": "/Solutions/E09/02/task.txt"},
+								{"name": "A3", "type": "html", "path": "/Solutions/E09/03/A3.html", "path_task": "/Solutions/E09/03/task.txt"}
 								]},
 			{"name": "TypeScript", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
+								{"name": "A1", "type": "text", "path": "/Solutions/E10/01/text.txt"}, 
+								{"name": "A2", "type": "text", "path": "/Solutions/E10/02/text.txt"},
+								{"name": "A3", "type": "text", "path": "/Solutions/E10/03/text.txt"}
 								]},
 			{"name": "Vue", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
+								{"name": "A1", "type": "html", "path": "/Solutions/E11/01/A1.html", "path_task": "/Solutions/E11/01/task.txt"}, 
+								{"name": "A2", "type": "html", "path": "/Solutions/E11/02/A2.html", "path_task": "/Solutions/E11/02/task.txt"},
+								{"name": "A3.1", "type": "text", "path": "/Solutions/E11/03.1/text.txt"}, 
+								{"name": "A3.2", "type": "html", "path": "/Solutions/E11/03.2/navigator.html", "path_task": "/Solutions/E11/03.2/task.txt"}
 								]},
 			{"name": "PHP", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
-								]},
-			{"name": "Security", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
-								]},
-			{"name": "Vue3", "sub": [
-								{"name": "A1"}, 
-								{"name": "A2"},
-								{"name": "A3"}, 
-								{"name": "A4"}
+								{"name": "A1", "type": "html", "path": "/Solutions/E12/01/index.php", "path_task": "/Solutions/E12/01/task.txt"}, 
+								{"name": "A2", "type": "html", "path": "/Solutions/E12/02/index.php", "path_task": "/Solutions/E12/02/task.txt"}
 								]}
 ]

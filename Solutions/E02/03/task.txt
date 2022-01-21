@@ -1,0 +1,10 @@
+<h2>
+Gegeben ist folgendes HTML-Wireframe: <br>
+
+Hinweis zu den Farben: Firefox DevTools anthalten eine Pipette namens "Eyedropper", mit der man die Farben aus einer Webseite auslesen kann. Die grünliche Farbe im Rahmen des Wireframes ist demnach #b2d6d1, <br>
+
+Hinweis zu den Schriften (Fonts): Die größte Sammlung an "kostenlosen" Web-Schriften stammt von Google und ist unter Google Fonts zu finden. Wer lieber aus dem Vorrat an vorhanden Schriften auswählt, wird unter websichere Schriften fündig. <br>
+
+Frage: Mit welchem HTML- und CSS-Code kann man diesen Wireframe exakt nachbilden? <br>
+Schreiben Sie Ihren CSS-Code direkt in die HTML-Datei. Geben Sie Ihren HTML- und CSS-Quellcode zusammen in dieses Textfeld ein:
+</h2>

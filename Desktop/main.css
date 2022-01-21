@@ -47,9 +47,49 @@ body {
 	position:relative;
 }
 
-#if_main {
+#d_task {
 	width: 80%;
-	height: 80%;
+	height: 15%;
+	margin-top: 10vh;
+	margin-left: 10vw;
+	background-color: #41807c;
+	overflow-y: scroll;
+	border: 3px solid darkgrey;
+	border-collapse: collapse;
+}
+
+#d_task h2 {
+	text-align:center;
+}
+
+#d_main iframe {
+	width: 80%;
+	height: 65%;
+	margin-left: 10vw;
+	background-color: #41807c;
+	border: 3px solid darkgrey;
+	border-collapse: collapse;
+}
+
+#d_text {
+	width: 76%;
+	height: 78%;
 	margin-left: 10vw;
 	margin-top: 10vh;
+	padding-top: 2vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	background-color: #41807c;
+	overflow-y: scroll;
+	border: 3px solid darkgrey;
+}
+
+#d_text h1 {
+	text-align:center;
+}
+
+#d_text p {
+	text-align:center;
+	font-size: 20px;
+	margin-bottom: 4%;
 }

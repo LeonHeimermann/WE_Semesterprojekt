@@ -1,0 +1,23 @@
+<h1>Sie bekommen im Browser den HTTP Status Code 200. Was bedeutet das?</h1>
+
+<p>Status 200 (OK) bedeutet, dass die Anfrage erfolgreich war.</p>
+
+
+<h1>Sie bekommen im Browser den HTTP Status Code 301. Was hat das zu bedeuten?</h1>
+
+<p>Code 301 (Moved Permanently) heißt, dass die angefragten Daten nicht mehr unter der verwendeten Domain sondern unter einer anderen zu finden sind.</p>
+
+
+<h1>Sie bekommen im Browser den HTTP Status Code 400. Was hat das zu bedeuten? Was können Sie dagegen tun?</h1>
+
+<p>Status Code 400 (Bad Request) bedeutet, dass der Server die Anfrage nicht ausführen kann. Das kann z.B. daran liegen, dass man eine falsche URL verwendet hat. Zur Lösung des Problems empfiehlt es sich also, die URL nochmal zu überprüfen.</p>
+
+
+<h1>Sie bekommen im Browser den HTTP Status Code 403. Was hat das zu bedeuten? Was können Sie dagegen tun?</h1>
+
+<p>Code 403 (Forbidden) heißt, dass der Zugriff auf die Daten verweigert wurde. Das liegt meist nicht an einer fehlenden Authentifizierung, sondern eher an falschen Einstellungen im Browser. Es wird empfohlen Erweiterungen des Browsers zu überprüfen, den Cache zu leeren oder die Firewall-Einstellungen zu kontrollieren.</p>  
+
+
+<h1>In einer Webanwendung benötigen Sie eine OPTIONS-Anfrage, die die Optionen des Servers vor dem eigentlichen Zugriff erfragen soll. Aus Performanzgründen soll die Abfrage jedoch cacheable sein. Wie könnten Sie dafür eine Lösung angehen?</h1>
+
+<p>Damit die OPTIONS-Anfrage cachable wird muss man "Access-Control-Max-Age: 86400" zu dem preflight response (Erste Anfrage an den Servern mit Informationen zur Anfrage) hinzufügen. Dadurch wird die Zeit, die eine OPTIONS-Anfrage im Cache bleibt bei Chrome auf 2 Stunden und bei Firefox auf 24 Stunden erhöht.</p>

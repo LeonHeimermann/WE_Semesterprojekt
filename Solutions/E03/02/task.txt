@@ -1,0 +1,5 @@
+<h2>
+Spielen Sie zunächst das Grid Garden -Spiel, um Grid Layout zu lernen. <br>
+
+Implementieren Sie dann das gleiche responsive Webdesign wie in Aufgabe 3.1 allerdings mit Grid und der Mobile-First-Strategie! Vermeiden Sie diesmal außerdem das Erscheinen von Scrollbars.
+</h2>

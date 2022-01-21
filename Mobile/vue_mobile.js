@@ -15,19 +15,14 @@ new Vue({
 				'<div class="d_nav_main">' +
 					'<p>{{ button.name }}</p>' +
 				'</div>' +
-				'<div v-for="sub in button.sub" class="d_nav_sub" @mouseover="activate_color($event)"  @mouseleave="deactivate_color($event)">' +
+				'<div v-for="sub in button.sub" class="d_nav_sub" @click="change_content(sub.type, sub.path, sub.path_task)"> ' +
 					'<p>{{ sub.name }}</p>' +
 				'</div>' +
 			'</div>' +
 		'</div>',
 	methods: {
-		activate_color: function(e) {
-			e.target.style.backgroundColor = "#393d47";
-			e.target.firstChild.style.backgroundColor = "#393d47";
-		},
-		deactivate_color: function(e) {
-			e.target.style.backgroundColor = "#292c33";
-			e.target.firstChild.style.backgroundColor = "#292c33";
+		change_content: function(type, path, path_task) {
+			window.location.href = './mobile.php?type=' + type + '&path=' + path + '&path_task=' + path_task;
 		}
 	}
 });

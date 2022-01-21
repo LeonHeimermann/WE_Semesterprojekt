@@ -1,0 +1,33 @@
+#outer {
+	border:1px solid black;
+	width: 99vw;
+	height: 80vh;
+	padding: 1vw;
+	-moz-box-sizing: boder-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#hbrs_img {
+	display: inline;
+	width: 97vw;
+	height: 77vh;
+}
+
+#trigger {
+	width: 3vw;
+	height: 3vh;
+}
+
+#trigger ~ #outer #hbrs_img { 
+    display: none; 
+}
+
+#trigger:checked ~ #outer #hbrs_img { 
+	display: inline; 
+}
+
+#label_trigger {
+	font-size: 1.2em;
+	font-weight: bold;
+}

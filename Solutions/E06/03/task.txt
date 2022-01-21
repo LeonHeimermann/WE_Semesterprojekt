@@ -1,0 +1,5 @@
+<h2>
+Stellen Sie bei Ihrer Klasse aus der letzten Aufgabe die topologische Iterierbarkeit mittels Generator her.
+
+Wählen Sie eine Implementierung, die universell gültig, also nicht nur für das Beispiel gilt.
+</h2>

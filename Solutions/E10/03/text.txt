@@ -1,0 +1,45 @@
+<h1>Auf Deno ist TypeScript ohne Übersetzung direkt ablauffähig. Deno ist also die Runtime Engine für TypeScript.
+Schreiben Sie in TypeScript möglichst umfangreich statisch typisiert ein auf Deno ablauffähiges Programm server.ts, das Sie mit deno run --allow-net server.ts starten können, das die COVID-19-Fallzahlen in Deutschland einliest, Minimum, Maximum, Durchschnitt und Summe berechnet und diese auf einer Webseite ausgibt.
+Ein Beispiel-Programm zu server.ts finden Sie im Deno-Manual unter Making an HTTP request</h1>
+
+<p>
+async function fetchJson(url: string) {
+	const request = await fetch(url);
+	return await request.json();
+}<br>
+	
+function calc_data(inp: Array<number>): Array<number> {
+	var sum: number = 0;
+	var min: number = inp[0];
+	var max: number = inp[0];
+	for (var i: number = 0; i < inp.length; i++) {
+		if (inp[i] > max) {
+			max = inp[i];
+		}
+		if (inp[i] < min) {
+			min = inp[i];
+		}
+		sum += inp[i];
+	}
+	return [min, max, sum/inp.length, sum];
+}<br>
+	
+const p_min = document.getElementById('p_min');
+const p_max = document.getElementById('p_max');
+const p_avg = document.getElementById('p_avg');
+const p_sum = document.getElementById('p_sum');
+
+var json_txt = fetchJson("Corona_Fallzahlen.json");
+	
+var list: Array<number> = [];
+for (var i: number in json_txt["Fallzahlen"]) {
+	list.push(i);
+}
+	
+var data: Array<number> = calc_data(list);
+	
+p_min.innerHTML = data[0];
+p_max.innerHTML = data[1];
+p_avg.innerHTML = data[2];
+p_sum.innerHTML = data[3];
+</p>

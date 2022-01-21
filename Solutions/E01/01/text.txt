@@ -1,0 +1,13 @@
+<h1>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von TBL abgelehnt?</h1>
+
+<p>Das WWW-Proposal von TBL hat nicht für referenzielle Integrität gesorgt, was broken Links zugelassen hat. Man ist damals davon ausgegangen, dass das Konzept von TBL aufgrund dieses Mangels ein Rückschritt in der Entwicklung wäre.</p>
+
+
+<h1>Was sind die fachlichen Argumente, warum das WWW dennoch ein Erfolg wurde?</h1>
+
+<p>Das WWW basiert eben nicht auf mathematischer Korrektheit, was eine Entwicklung und Benutzung stark vereinfacht. Außerdem ist das Konzept leicht weiterentwickelbar und dadurch skalierbar.</p>
+
+
+<h1>Was wäre der Preis für die garantierte Verhinderung von “broken links”?</h1>
+
+<p>Um broken links zu verhindern müsste man eine Liste mit jeder möglichen Domain führen. Wird eine neue Domain erzeugt müsste die Liste aktualisiert werden. Ein Benutzer könnte nun nur noch aus dieser Liste auswählen auf welche Seite er möchte. Das wäre sehr umständlich und würde einen großen Verwaltungsaufwand erzeugen.</p>

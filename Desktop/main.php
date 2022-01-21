@@ -22,7 +22,7 @@
 		<navigator id="d_navigator"></navigator>
 	</div>
 	<div id="d_main">
-		<iframe id="if_main" src="./index.php"></iframe>
+	
 	</div>
   </body>
   <script src="vue.js"></script>

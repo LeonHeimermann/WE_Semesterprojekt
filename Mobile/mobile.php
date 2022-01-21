@@ -22,7 +22,7 @@
 		</div>
 	</div>
 	<div id="d_lower">
-		<iframe id="if_mobile" src="./index.php"></iframe>
+		
 	</div>
   </body>
   <script src="mobile.js">

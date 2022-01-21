@@ -1,0 +1,5 @@
+<h2>
+Codieren Sie eine HTML-Datei mit Inline SVG, so dass sich folgendes Aussehen ergibt:  <br>
+
+Fügen Sie als Hover-Effekt eine CSS-Animation hinzu, die die Größe der SVG-Grafik verdoppelt, wenn man mit dem Cursor über die Grafik geht.
+</h2>

@@ -1,0 +1,3 @@
+<h2>
+Implementieren Sie ein eigenes Balkendiagramm mit HTML, Inline SVG, CSS und JavaScript. Geben Sie die Daten für das Balkendiagramm im JSON-Format vor. Nehmen Sie als Beispieldaten die COVID-19: Fallzahlen in Deutschland. Animieren Sie die Grafik (siehe z.B. Highchart Bar Chart).
+</h2>

@@ -20,7 +20,7 @@ body {
 
 #d_lower {
 	width: 100%;
-	height: 90%;
+	height: 85%;
 }
 
 #if_mobile {
@@ -28,4 +28,51 @@ body {
 	height: 80%;
 	margin-top: 5%;
 	margin-left: 5%;
+}
+
+#d_text {
+	width: 86%;
+	height: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: #41807c;
+	overflow-y: scroll;
+	border: 2px solid darkgrey;
+}
+
+#d_text h1 {
+	text-align:center;
+}
+
+#d_text p {
+	text-align:center;
+	font-size: 20px;
+	margin-bottom: 20%;
+}
+
+#d_task {
+	width: 90%;
+	height: 25%;
+	margin-top: 5%;
+	margin-left: 5%;
+	background-color: #41807c;
+	overflow-y: scroll;
+	border: 2px solid darkgrey;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+#d_task h2 {
+	text-align:center;
+}
+
+#d_lower iframe {
+	width: 90%;
+	height: 75%;
+	margin-left: 5%;
+	background-color: #41807c;
+	border: 2px solid darkgrey;
+	border-collapse: collapse;
 }

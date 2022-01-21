@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ü3</title>
+  </head>
+  <style>
+	body {
+		font-family: arial;
+	}
+  </style>
+  <body>
+	<div style="text-align:center">
+		<svg id="svg_ttt" width="90vw" height="90vh">
+			<rect id="r0" x="0%" y="0%" width="33%" height="33%" fill="pink" stroke="black" stroke-width="0.5%"/>
+			<rect id="r1" x="33%" y="0%" width="33%" height="33%" fill="pink" stroke="black" stroke-width="0.5%"/>
+			<rect id="r2" x="66%" y="0%" width="33%" height="33%" fill="pink" stroke="black" stroke-width="0.5%"/>
+			
+			<rect id="r3" x="0%" y="33%" width="33%" height="33%" fill="pink" stroke="black" stroke-width="0.5%"/>
+			<rect id="r4" x="33%" y="33%" width="33%" height="33%" fill="pink" stroke="black" stroke-width="0.5%"/>
+			<rect id="r5" x="66%" y="33%" width="33%" height="33%" fill="pink" stroke="black" stroke-width="0.5%"/>
+			
+			<rect id="r6" x="0%" y="66%" width="33%" height="33%" fill="pink" stroke="black" stroke-width="0.5%"/>
+			<rect id="r7" x="33%" y="66%" width="33%" height="33%" fill="pink" stroke="black" stroke-width="0.5%"/>
+			<rect id="r8" x="66%" y="66%" width="33%" height="33%" fill="pink" stroke="black" stroke-width="0.5%"/>
+		</svg>
+	</div>
+  </body>
+  <script>
+		function draw_X_comp(startX, startY, endX, endY) {
+			const line1 = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+			line1.setAttribute("x1", (startX).toString() + "%");
+			line1.setAttribute("y1", (startY).toString()  + "%");
+			line1.setAttribute("x2", (endX).toString()  + "%");
+			line1.setAttribute("y2", (endY).toString()  + "%");
+			line1.setAttribute("stroke", "black");
+			line1.setAttribute("stroke-width", "0.5%");
+			
+			const line2 = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+			line2.setAttribute("x1", (endX).toString() + "%");
+			line2.setAttribute("y1", (startY).toString()  + "%");
+			line2.setAttribute("x2", (startX).toString()  + "%");
+			line2.setAttribute("y2", (endY).toString()  + "%");
+			line2.setAttribute("stroke", "black");
+			line2.setAttribute("stroke-width", "0.5%");
+			
+			svg_ttt.append(line1);
+			svg_ttt.append(line2);
+		}
+		
+		function draw_X(field) {
+			var x_pos = Math.floor(field % 3);
+			var y_pos = Math.floor(field / 3);
+			
+			draw_X_comp(x_pos*33, y_pos*33, (x_pos+1)*33, (y_pos+1)*33);
+		}
+		
+		function draw_O_comp(startX, startY, radius) {
+			const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+			circle.setAttribute("cx", (startX + 16.5).toString() + "%");
+			circle.setAttribute("cy", (startY + 16.5).toString() + "%");
+			circle.setAttribute("r", radius.toString() + "%");
+			circle.setAttribute("stroke", "black");
+			circle.setAttribute("stroke-width", "1%");
+			circle.setAttribute("fill", "pink");
+			
+			svg_ttt.append(circle);
+		}
+		
+		function draw_O(field) {
+			var x_pos = Math.floor(field % 3);
+			var y_pos = Math.floor(field / 3);
+			
+			draw_O_comp(x_pos*33, y_pos*33, 15);
+		}
+		
+		
+		var current = 0;
+		
+		var svg_ttt = document.getElementById('svg_ttt');
+		
+		var rects = [];
+		for (let i = 0; i < 9; i++) {
+			elem = document.getElementById("r" + i.toString());
+			elem.addEventListener('click', function() {
+				const id = i;
+				if (current == 0) {	
+					draw_X(id);
+					current = 1;
+				} else {
+					draw_O(id);
+					current = 0;
+				}
+			});
+			rects.push(elem);
+		}
+	</script>
+</html>
