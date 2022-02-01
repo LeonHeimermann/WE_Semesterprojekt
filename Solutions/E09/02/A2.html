@@ -9,10 +9,6 @@
 	body {
 		font-family: arial;
 	}
-	svg:hover {
-		width: 50vw;
-		height: 56vh;
-	}
   </style>
   <body>
 	<div style="text-align:center">
@@ -28,10 +24,9 @@
 		var json_data_tmp = response.json();
 		json_data_tmp.then(data => { 
 			var json_data = data;
-			
 			var list = [];
-			for (var i in json_data["Fallzahlen"]) {
-				list.push(i);
+			for (var i in json_data[0]["Fallzahlen"]) {
+				list.push(json_data[0]["Fallzahlen"][i]);
 			}
 			
 			var length = list.length;

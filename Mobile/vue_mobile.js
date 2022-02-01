@@ -22,7 +22,8 @@ new Vue({
 		'</div>',
 	methods: {
 		change_content: function(type, path, path_task) {
-			window.location.href = './mobile.php?type=' + type + '&path=' + path + '&path_task=' + path_task;
+			//Quelle: http://net-informations.com/js/iq/load.htm
+			window.location = './mobile.php?type=' + type + '&path=' + path + '&path_task=' + path_task;
 		}
 	}
 });

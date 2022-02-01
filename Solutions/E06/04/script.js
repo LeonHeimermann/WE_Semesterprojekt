@@ -70,7 +70,6 @@ var counter = 0;
 
 const handler = {
 	get(target, prop, receiver) {
-		console.log(3);
 		return target.iter();
 	}
 }
@@ -78,9 +77,10 @@ const handler = {
 const vorrang = new Vorrang([["studieren", "prüfen"], ["schlafen", "studieren"], ["essen", "studieren"]]);
 const proxy = new Proxy(vorrang, handler);
 
-var list = proxy.iter();
-for (const elem of list) {
-	console.log(elem);
+var list = []
+console.log(proxy.length);
+for (let i = 0; i < proxy.length; i++) {
+	console.log(proxy[i]);
 }
 
 

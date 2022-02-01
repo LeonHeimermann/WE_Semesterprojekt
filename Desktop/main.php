@@ -1,3 +1,12 @@
+<?php
+	// Quelle: https://www.youtube.com/watch?v=VKiGDzsCnnE&list=PLKZaiXDcz_NU88jfBMfUfonVAamSA0BnB&index=4
+	session_start();
+	if(!isset($_SESSION["username"])) {
+		header("Location: ../index.php");
+		exit;
+	}
+	clearstatcache();
+?>
 <!DOCTYPE html>
 <script>
 	var json_data;

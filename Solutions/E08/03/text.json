@@ -1,0 +1,5 @@
+[
+	{"html": {"left": "<p>a</p>", "text": "<p>1</p>"}},
+	{"css": {"left": "<p>b</p>", "text": "<p>2</p>"}},
+	{"js": {"left": "<p>c</p>", "text": "<p>3</p>"}}
+]

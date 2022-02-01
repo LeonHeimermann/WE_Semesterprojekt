@@ -1,6 +1,10 @@
 const r_back = document.getElementById('r_back');
-r_back.addEventListener('click', e => { window.history.go(-1) });
+r_back.addEventListener('click', e => { 
+	//Quelle: http://net-informations.com/js/iq/load.htm
+	window.location = './main_mobile.php' 
+});
 
+//Quelle: https://stackoverflow.com/questions/486896/adding-a-parameter-to-the-url-with-javascript
 const params = new URLSearchParams(window.location.search);
 
 const type = params.get('type');
