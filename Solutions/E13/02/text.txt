@@ -1,0 +1,14 @@
+<h1>Lösen Sie die Aufgaben in (A1) Injection, SQL Injection (Intro). </h1>
+
+<p>
+Nr. 2 SELECT department FROM employees WHERE first_name='Bob' and last_name='Franco'; <br>
+Nr. 3 UPDATE employees SET department='Sales' WHERE first_name='Tobi' AND last_name='Barnett'; <br>
+Nr. 4 ALTER TABLE employees ADD "phone" varchar(20); <br>
+Nr. 5 GRANT SELECT ON grant_rights TO unauthorized_user; <br>
+Nr. 9 SELECT * FROM user_data WHERE first_name='John' and last_name='Smith' or '1'='1' <br>
+Nr. 10 SELECT * From user_data WHERE Login_Count=1 and userid=1 OR '1'='1' <br>
+Nr. 11 Employee Name='' Authentification Tan=' OR '1'='1 <br>
+Nr. 13 ';DROP TABLE access_log-- <br>
+</p>
+
+<p>(Mit Hilfe der Lösungen gelöst)</p>

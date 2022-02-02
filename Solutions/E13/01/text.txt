@@ -1,0 +1,19 @@
+<h1>In der Vorlesung wurde ein ArrayWrapper Exploit gezeigt. <br>
+Analysieren Sie die Ursache dieses Exploits. <br>
+Entwickeln Sie ein Sicherheitskonzept und eine ArrayWrapper-Lösung, die gegen diesen Exploit gewappnet ist.</h1>
+
+
+<h1>Geben Sie hier Ihr Ursachenanalyse ein:</h1>
+
+<p>Die Methoden des ArrayWrappers können überschrieben werden und somit manipuliert werden.<p>
+
+
+<h1>Geben Sie hier Ihr Sicherheitskonzept ein:</h1>
+
+<p>
+Wenn die push-Funktion nicht mehr überschrieben werden kann kann der ArrayWrapper auch nicht mehr manipuliert werden.<br>
+Mann müsste also eine Implementierung ohne push-Funktion einführen.
+</p>
+
+
+<p>(Mit Hilfe der Lösungen gelöst)</p>
